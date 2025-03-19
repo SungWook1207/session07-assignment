@@ -1,54 +1,19 @@
-# React + TypeScript + Vite
+# To-do List
+- 사용자가 입력한 할 일을 목록으로 추가하고, 삭제할 수 있도록 구현한다.
+- useState를 활용하여 배열 상태를 관리하는 방법을 익힌다.
+- React의 리스트 렌더링 및 이벤트 핸들링을 연습한다.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### 과제 시나리오오
+1. 사용자가 input에 할 일을 입력하고 "추가하기" 버튼을 클릭.
+2. 입력한 할 일이 목록에 추가됨.
+3. 각 할 일 항목 오른쪽에 "삭제" 버튼이 있으며, 클릭하면 해당 할 일이 목록에서 제거됨.
+4. 새로운 할 일을 입력하면 기존 목록이 유지되면서 추가됨.
 
-Currently, two official plugins are available:
+#### 🚀 더 도전해보고 싶다면?
+- ✅ 할 일을 추가할 때 Enter 키를 눌러도 추가되도록 수정.
+- ✅ 할 일이 없을 때 할 일 목록 대신 "할 일이 없습니다" 메시지가 보이게 하기.
+- ✅ 삭제 버튼을 누르면 "정말 삭제하시겠습니까?" 확인 창을 띄워보세요. (window.alert 구글 검색 후 사용하기기)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+- `npm install` 실행
+- `npm run dev`로 프로젝트 로컬 실행

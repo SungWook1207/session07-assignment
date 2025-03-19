@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 
-// npm install 실행
-// npm run dev로 프로젝트 로컬 실행
-
 function App() {
   // 현재 입력하는 할 일 이름 값 상태
   // 할 일 목록 상태
